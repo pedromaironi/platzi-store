@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<div class="main-card">
+  <h3 class="title-card">{{products.title}}</h3>
+  <!-- <h3 appHighlight class="title-card">{{products.title}}</h3> -->
+  <div class="card-content">
+    <img class="card-image" [src]="products.image" alt = ""/>
+    <h5 class="card-price">{{products.price | currency:'DOP '}}</h5>
+    <p class="card-description">{{products.description}}</p>
+  </div>
+  <div class="card-footer">
+    <button class= "button-product" (click) = "addCart(products.title)">Agregar al carrito</button>
+  </div>
+</div>
+
+
