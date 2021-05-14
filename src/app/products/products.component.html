@@ -5,6 +5,7 @@
   {{products.price}} -->
   <app-product
   *ngFor="let products of products"
-   (productClicked)="clickProduct($event)"
-    [products]="products"></app-product>
+
+    [products]="products">
+  </app-product>
 </div>

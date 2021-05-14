@@ -11,6 +11,7 @@
   <div class="card-footer">
     <button class= "button-product" (click) = "addCart(products.title)">Agregar al carrito</button>
   </div>
+  <a [routerLink]="['./', products.id]">Ver detalle de producto</a>
 </div>
 
 
