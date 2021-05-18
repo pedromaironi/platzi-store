@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { Product } from 'src/app/models/product.model';
+import { Component, } from '@angular/core';
 import {
   Input,
   Output,
@@ -11,6 +10,8 @@ import {
   OnDestroy
 } from '@angular/core';
 
+import { Product } from '../../../core/models/product.model';
+
 @Component({
   selector: 'app-product',
   templateUrl: 'product.component.html',
@@ -20,7 +21,6 @@ export class ProductComponent implements DoCheck, OnInit, OnDestroy {
   constructor() {
     console.log("constructor");
   }
-
   // ngOnChanges(changes: SimpleChanges) {
   //   console.log("onChanged");
   //   console.log(changes);
@@ -30,6 +30,7 @@ export class ProductComponent implements DoCheck, OnInit, OnDestroy {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
     console.log("onInit");
+
   }
 
   ngDoCheck(): void {

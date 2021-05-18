@@ -1,10 +1,11 @@
-<app-header></app-header>
+<!DOCTYPE html>
 <div class="product-grid">
   <!-- {{products.title}}
   <img class="imageProduct"  src="{{products.image}}" alt="">
   {{products.price}} -->
   <app-product
   *ngFor="let products of products"
+   (productClicked)="clickProduct($event)"
 
     [products]="products">
   </app-product>
